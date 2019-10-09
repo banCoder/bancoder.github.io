@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Projekti</title>
+  <link rel="stylesheet" href="css/index.css">
+  <script type="text/javascript" src="js/kovcek.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+</head>
+
+<body id="ozadje">
+  <div id="vsebina">
+    <h1>Spletna aplikacija</h1>
+
+    <h3>Pretvorba stopinj</h3>
+    <input id="stopinje" type="text" name="" placeholder="Vnesi stopinje">
+    <button onclick="pretvorbaStopinj()" type="button" name="button">Izračunaj</button>
+    <h4 id="rezultat">Rezultat...</h4>
+
+    <h1>Blagajna</h1>
+
+    <button type="button" onclick="shrani()" name="button">Shrani</button>
+    <button type="button" onclick="zapravi()" name="button">Zapravi</button>
+    <p id="znesek"></p>
+
+    <h1 onclick="dodajHtml()">Dodajanje HTML-ja</h1>
+    <div id="dodajhtml"></div>
+    <h1>FlixBus odhodi</h1>
+    <button onclick="flixbus()" type="button" name="button">Call FlixBus</button>
+    <table border="1" id="flixbus-odhodi">
+      <tr>
+        <th>Pot avtobusa</th>
+        <th>ID poti</th>
+        <th>Sporočilo</th>
+      </tr>
+    </table>
+
+    <h1>Chuck Norris</h1>
+    <input id="searchWord" type="text" name="" value="">
+    <button onclick="poisciVice()" type="button" name="button">Išči</button>
+    <table border="1" id="vici">
+      <tr>
+        <th>Ikona</th>
+        <th>Vic</th>
+      </tr>
+    </table>
+
+    <h1>Chuck Norris random vic</h1>
+
+    <div id="prostor-za-vic"></div>
+  </div>
+  <script type="text/javascript">
+    flixbus();
+    randomVic();
+    setInterval(randomVic, 5000);
+  </script>
+</body>
+
+</html>

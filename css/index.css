@@ -1,0 +1,25 @@
+#vsebina {
+  margin: 100px;
+  color: black;
+  border-style: solid;
+  border-width: 1px;
+  background-color: white;
+  padding: 10px;
+  padding-left: 30px;
+  -webkit-box-shadow: 42px 40px 28px -4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 42px 40px 28px -4px rgba(0, 0, 0, 0.75);
+  box-shadow: 42px 40px 28px -4px rgba(0, 0, 0, 0.75);
+}
+#naslov {
+  color: black;
+}
+#ozadje {
+  background-color: #f7f6e4;
+  font-family: 'Caveat', cursive;
+}
+#slika {
+  margin-left: 20px;
+}
+#flixbus-odhodi {
+  width: 100%;
+}
